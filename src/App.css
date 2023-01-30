@@ -1,38 +1,57 @@
-.App {
+body{
+  background-color: rgb(41, 47, 104);
+  padding:5% 30%;
+  
+}
+.main{
+  display: flex;
+  color: antiquewhite;
+}
+.response{
+  display: flex;
+  margin-top: 10px;
+  
+}
+.element{
+  width: 17vw;
+  height: 3vh;
+  margin-left: 2%;
   text-align: center;
+  border-bottom: solid 1px;
+  border-radius: 4px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.check{
+  margin-right: 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 4%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-color: aliceblue;
 }
+.input{
+  background-color: rgb(37, 18, 61,0.9);
+  text-align: center;
+  outline: none;
+  border: 0;
+  height: 20px;
+  color: aliceblue;
+  width: 17vw;
+  height: 4vh;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done{
+  margin-left: 20%;
+  border-color: aliceblue;
+}
+.title{
+  width: 17vw;
+  height: 4vh;
+  border: solid 1px;
+  border-radius: 9px;
+  padding-top: 3%;  
 }
