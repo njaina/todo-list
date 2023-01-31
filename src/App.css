@@ -1,26 +1,33 @@
 body{
   background-color: rgb(41, 47, 104);
   padding:5% 30%;
-  
 }
 .main{
   display: flex;
-  color: antiquewhite;
+  color: aliceblue;
 }
+
 .response{
   display: flex;
-  
-}
-.element{
-  width: 17vw;
-  height: 3vh;
-  margin-top: 10px;
-  margin-left: 2%;
+  border: solid 1px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 6px;
   text-align: center;
-  border-bottom: solid 1px;
+  background-color: rgb(26, 30, 68,0.999);
+  border-color: rgb(26, 30, 68,0.999);
+}
+
+.element{
+  width: 15vw;
+  margin-top: 10px;
+}
+.done-elt{
+  width: 21vw;
+  margin-top: 10px;
 }
 .check{
-  margin-right: 10%;
+  padding-top: 10px;
 }
 .title{
   text-align: center;
@@ -33,7 +40,7 @@ body{
   border-color: aliceblue;
 }
 .input{
-  background-color: rgb(37, 18, 61,0.9);
+  background-color: rgb(37, 18, 61,0.999);
   text-align: center;
   outline: none;
   border: 0;
