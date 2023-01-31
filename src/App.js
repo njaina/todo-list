@@ -27,8 +27,8 @@ function App() {
   };
   
   return (
-    <>
-    <div className="main">
+    <div className="main"> 
+    <div className="container">
     <div className="todo">
       <div className="title">Todo</div>
       <div>
@@ -45,22 +45,29 @@ function App() {
         {InputValues.map((todo, index) => (
           <div className="response" >
             <div className="element" key={todo} >{todo}</div>
-                <input type="checkbox" onClick={() => handleCheck(index)} />
-              </div>
+            <div className="check">
+            <input  type="checkbox" onClick={() => handleCheck(index)} /></div>
+            </div>
             ))}
         </div>
       </div>
     </div>
+    </div>
+     
+    <div className="container">
     <div className="done">
     <div className="title" >Done</div>
     <div>
       {done.map((todo) => (
-        <div className="element " key={todo}>{todo}</div>
+        
+        <div className="response">
+          <div className="done-elt"  key={todo}>{todo}</div>
+        </div>
       ))}
     </div>
     </div>
     </div>
-    </>
+    </div>
   );
 }
 
