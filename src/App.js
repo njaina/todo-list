@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "./App.css"
-import Box from "./Component/Box";
-import { Title } from "./Component/Title";
 
 function App() {
   const [value,setValue]=useState("");
   const [InputValues, setInputValues] = useState([]);
-  const [isChecked,setIsChecked]= useState(false);
+  const [done, setDone] = useState([]);
   
   
 
@@ -20,13 +18,14 @@ function App() {
       setValue('');
     }
   };
-  const handleChecked = ()=>{
-      if(!isChecked) setIsChecked(true);
-      
-      setIsChecked(false)
-  }
-  console.log(isChecked);
-
+  
+  const handleCheck = (index) => {
+    const doneItem = InputValues[index];
+    const newTodos = InputValues.filter((_, i) => i !== index);
+    setDone([...done, doneItem]);
+    setInputValues(newTodos);
+  };
+  
   return (
     <>
     <div className="main">
@@ -43,37 +42,24 @@ function App() {
         />
         <div>
       
-          {value===""?
-          (InputValues.map
-            ((Element,key) =>
-              (
-                <div className="response" >
-                { !isChecked ? <div className="element" key={key} >{Element}</div> : <div></div> }
-                {isChecked===false? <input
-                className="check"
-                type="checkbox"
-                onClick={()=>handleChecked()}
-                ></input> : <div></div> }
-                </div>
-              ))
-          )
-          :<div></div>}
-
+        {InputValues.map((todo, index) => (
+          <div className="response" >
+            <div className="element" key={todo} >{todo}</div>
+                <input type="checkbox" onClick={() => handleCheck(index)} />
+              </div>
+            ))}
         </div>
       </div>
     </div>
     <div className="done">
     <div className="title" >Done</div>
     <div>
-    {InputValues.map((Element,k) => (
-            <>
-            { isChecked  ? <div className="element" key={k} >{Element}</div> : <div></div> }
-            </>
-          ))}
+      {done.map((todo) => (
+        <div className="element " key={todo}>{todo}</div>
+      ))}
     </div>
     </div>
     </div>
-    
     </>
   );
 }
