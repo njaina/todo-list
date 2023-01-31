@@ -9,16 +9,15 @@ body{
 }
 .response{
   display: flex;
-  margin-top: 10px;
   
 }
 .element{
   width: 17vw;
   height: 3vh;
+  margin-top: 10px;
   margin-left: 2%;
   text-align: center;
   border-bottom: solid 1px;
-  border-radius: 4px;
 }
 .check{
   margin-right: 10%;
