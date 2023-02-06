@@ -1,4 +1,3 @@
-   
    const DoneList = ({ done }) => (
     <div>
       {done.map((todo) => (

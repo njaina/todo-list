@@ -1,4 +1,3 @@
-
 import TodoItem from "./TodoItem";
 
 const TodoList = ({ InputValues, handleCheck }) => (
