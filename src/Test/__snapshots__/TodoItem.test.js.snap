@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem component renders correctly 1`] = `
+<div
+  className="response"
+>
+  <div
+    className="element"
+  >
+    This is a sample todo
+  </div>
+  <div
+    className="check"
+  >
+    <input
+      onClick={[Function]}
+      type="checkbox"
+    />
+  </div>
+</div>
+`;

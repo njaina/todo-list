@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoneList component renders correctly 1`] = `
+<div>
+  <div
+    className="response"
+  >
+    <div
+      className="done-elt"
+    >
+      item 1
+    </div>
+  </div>
+  <div
+    className="response"
+  >
+    <div
+      className="done-elt"
+    >
+      item 2
+    </div>
+  </div>
+  <div
+    className="response"
+  >
+    <div
+      className="done-elt"
+    >
+      item 3
+    </div>
+  </div>
+</div>
+`;
