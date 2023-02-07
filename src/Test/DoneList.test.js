@@ -4,7 +4,7 @@ import DoneList from "../Components/DoneList";
 
 describe("DoneList component", () => {
   it("renders correctly", () => {
-    const done = ["item 1", "item 2", "item 3"];
+    const done = ["todo1", "todo 2", "todo 3"];
     const tree = renderer.create(<DoneList done={done} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
