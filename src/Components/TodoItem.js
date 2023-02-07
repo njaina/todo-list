@@ -1,4 +1,5 @@
-const TodoItem = ({ todo, handleCheck, index }) => (
+const TodoItem = ({ todo, handleCheck, index }) => {
+  return (
     <div className="response">
       <div className="element" key={todo}>
         {todo}
@@ -6,6 +7,7 @@ const TodoItem = ({ todo, handleCheck, index }) => (
       <div className="check">
         <input type="checkbox" onClick={() => handleCheck(index)} />
       </div>
-    </div>
-  );
+    </div>  
+    
+  )};
   export default TodoItem;

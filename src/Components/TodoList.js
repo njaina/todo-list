@@ -1,6 +1,7 @@
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ InputValues, handleCheck }) => (
+const TodoList = ({ InputValues, handleCheck }) => {
+  return (
     <div>
       {InputValues.map((todo, index) => (
         <TodoItem
@@ -11,5 +12,6 @@ const TodoList = ({ InputValues, handleCheck }) => (
         />
       ))}
     </div>
-  );
-  export default TodoList;
+    )
+};
+export default TodoList;
